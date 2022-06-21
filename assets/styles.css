@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ********* */
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+h1,h2,h3,h4,h5,h6,p {
+  cursor: default;
+}
+a {
+  color: #8e4ffd;
+  text-decoration: none;
+}
+.main
+{
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  max-width: 100%;
+  margin: 15px;
+}
+.main .mainCoverImg
+{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px / 13px;
+}
+.main .mainSiteName
+{
+  margin: 20px 0 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.main .mainSiteDesc
+{
+  color: #666;
+  line-height: 1.25;
+  word-break: break-word;
+}
+.main .mainSiteDesc ul
+{
+  padding-left: 15px;
+}
+.main .mainSiteDesc ul li
+{
+  margin: 4px 0;
+}
+.main .mainSiteDesc ul li::before
+{
+  content: "\2022";
+  color: #b9f;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.main .dlBtn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #8e4ffd;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 12px / 13px;
+}
+.main .dlBtn:hover
+{
+  opacity: 0.5;
+}
+.main .donateAddr
+{
+  margin-bottom: 4px;
+  line-height: 20px;
+}
+.main .donateAddrHash
+{
+  padding: 0 2px;
+  background-color: #eee;
+  color: #333;
+  border-radius: 3px;
+  font-family: monospace;
+  word-break: break-all;
+}
